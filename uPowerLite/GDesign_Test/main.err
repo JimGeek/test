@@ -1,9 +1,0 @@
-Warning[2058] E:\SW_DEV\GDesign_Test\main.c 286 : call of function without prototype
-Warning[2058] E:\SW_DEV\GDesign_Test\main.c 287 : call of function without prototype
-Warning[2058] E:\SW_DEV\GDesign_Test\main.c 318 : call of function without prototype
-Warning[2054] E:\SW_DEV\GDesign_Test\main.c 341 : suspicious pointer conversion
-Warning[2066] E:\SW_DEV\GDesign_Test\main.c 341 : type qualifier mismatch in assignment
-Warning[2058] E:\SW_DEV\GDesign_Test\main.c 355 : call of function without prototype
-Warning[2054] E:\SW_DEV\GDesign_Test\main.c 371 : suspicious pointer conversion
-Warning[2066] E:\SW_DEV\GDesign_Test\main.c 371 : type qualifier mismatch in assignment
-Warning[2058] E:\SW_DEV\GDesign_Test\main.c 387 : call of function without prototype
