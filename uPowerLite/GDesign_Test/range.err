@@ -1,0 +1,12 @@
+Error[1105] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 7 : symbol 'LATA3' has not been defined
+Error[1101] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 7 : lvalue required
+Error[1105] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 12 : symbol 'LATB3' has not been defined
+Error[1101] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 12 : lvalue required
+Error[1105] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 13 : symbol 'LATB2' has not been defined
+Error[1101] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 13 : lvalue required
+Error[1105] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 18 : symbol 'LATB4' has not been defined
+Error[1101] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 18 : lvalue required
+Error[1105] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 23 : symbol 'LATA0' has not been defined
+Error[1101] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 23 : lvalue required
+Error[1105] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 24 : symbol 'LATG3' has not been defined
+Error[1101] C:\Documents and Settings\Jimit.shah.216\Desktop\Codes\GDesign_Test\range.c 24 : lvalue required

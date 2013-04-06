@@ -1,0 +1,1147 @@
+MPLINK 4.38, Linker
+Linker Map File - Created Thu Jan 24 16:29:31 2013
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+           .code___init.o       code   0x000006    program   0x000002
+         .romdata_c018i.o    romdata   0x000008    program   0x000000
+        .romdata___init.o    romdata   0x000008    program   0x000000
+      .romdata_i2c1open.o    romdata   0x000008    program   0x000000
+      .idata_i2c1open.o_i    romdata   0x000008    program   0x000000
+           .romdata_dac.o    romdata   0x000008    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x000008    program   0x000000
+          .idata_font.o_i    romdata   0x000008    program   0x000010
+      .idata_fxd1616u.o_i    romdata   0x000008    program   0x000000
+             .stringtable    romdata   0x000008    program   0x000000
+           .idata_lcd.o_i    romdata   0x000008    program   0x000000
+           .romdata_lcd.o    romdata   0x000008    program   0x000000
+               low_vector       code   0x000018    program   0x00000a
+                   .cinit    romdata   0x000022    program   0x00001a
+          .romdata_main.o    romdata   0x00003c    program   0x005080
+              .code_lcd.o       code   0x0050bc    program   0x002c18
+          .romdata_font.o    romdata   0x007cd4    program   0x0015ee
+             .code_main.o       code   0x0092c2    program   0x0009c0
+              .code_dac.o       code   0x009c82    program   0x0001ba
+                     PROG       code   0x009e3c    program   0x0000e2
+             .code_font.o       code   0x009f1e    program   0x0000be
+               _cinit_scn       code   0x009fdc    program   0x00009e
+         .code_i2c1open.o       code   0x00a07a    program   0x000032
+         .code_fxd1616u.o       code   0x00a0ac    program   0x00002c
+                    .code       code   0x00a0d8    program   0x000020
+             _startup_scn       code   0x00a0f8    program   0x00001c
+          .idata_main.o_i    romdata   0x00a114    program   0x000024
+           .idata_dac.o_i    romdata   0x00a138    program   0x000000
+        .idata___init.o_i    romdata   0x00a138    program   0x000000
+            .code_c018i.o       code   0x00a138    program   0x000000
+         .idata_c018i.o_i    romdata   0x00a138    program   0x000000
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300005_main.o    romdata   0x300005    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+                 .tmpdata      udata   0x000000       data   0x000017
+                MATH_DATA      udata   0x000017       data   0x000014
+            .udata_font.o      udata   0x000060       data   0x00000e
+           .udata_c018i.o      udata   0x00006e       data   0x00000a
+                   .stack      udata   0x000e00       data   0x000100
+            .idata_main.o      idata   0x000f00       data   0x000024
+            .idata_font.o      idata   0x000f24       data   0x000010
+            .udata_main.o      udata   0x000f34       data   0x000003
+           .idata_c018i.o      idata   0x000f37       data   0x000000
+          .idata___init.o      idata   0x000f37       data   0x000000
+          .udata___init.o      udata   0x000f37       data   0x000000
+        .idata_i2c1open.o      idata   0x000f37       data   0x000000
+        .udata_i2c1open.o      udata   0x000f37       data   0x000000
+        .idata_fxd1616u.o      idata   0x000f37       data   0x000000
+        .udata_fxd1616u.o      udata   0x000f37       data   0x000000
+             .idata_lcd.o      idata   0x000f37       data   0x000000
+             .udata_lcd.o      udata   0x000f37       data   0x000000
+             .udata_dac.o      udata   0x000f37       data   0x000000
+             .idata_dac.o      idata   0x000f37       data   0x000000
+              SFR_BANKED0      udata   0x000f38       data   0x000003
+              SFR_BANKED1      udata   0x000f3d       data   0x000023
+            SFR_UNBANKED0      udata   0x000f60       data   0x0000a0
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00a137      
+                            0x300001    0x300003      
+                            0x300005    0x300006      
+            41277 out of 66584 program addresses used, program memory utilization is 61%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                Config_IO   0x0094ec    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                   D1616S   0x009e5e    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x009e6c    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x009e68    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x009e7e    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x009e4e    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+             DisplayOkMsg   0x00973c    program     extern E:\SLS_Intercom\uPowerLite\main.c
+             DisplayUpMsg   0x00964a    program     extern E:\SLS_Intercom\uPowerLite\main.c
+           DisplayVoltage   0x009516    program     extern E:\SLS_Intercom\uPowerLite\main.c
+               DisplayVtg   0x00981e    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                 FXD1616S   0x009e3c    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x00a0ac    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616u.c
+                 FXM1616S   0x009e88    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxm1616s.asm
+                 FXM1616U   0x009ee2    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxm1616u.asm
+                FillBlack   0x009420    program     extern E:\SLS_Intercom\uPowerLite\main.c
+              FillFullLcd   0x0093b2    program     extern E:\SLS_Intercom\uPowerLite\main.c
+               FillViolet   0x0093f2    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                  I2CBusy   0x009c82    program     extern E:\SLS_Intercom\uPowerLite\dac.c
+                   L13605   0x0083b0    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                   L18982   0x008f12    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                   L30929   0x007cd4    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                     L981   0x008d76    program     extern E:\SLS_Intercom\uPowerLite\font.c
+             LCD_FillRect   0x00572a    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+              LCD_OutChar   0x007964    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+              LCD_OutText   0x007baa    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+            LCD_Rectangle   0x0058f4    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+               LCD_bitmap   0x005cf0    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+            LCD_draw_line   0x00622e    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+LCD_draw_round_corner_box   0x0062ea    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+     LCD_draw_sloped_line   0x005e26    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+       LCD_horizontalline   0x005558    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+                LCD_image   0x005a92    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+                 LCD_init   0x00514c    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+          LCD_paint_block   0x00528a    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+             LCD_putpixel   0x005488    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+  LCD_round_corner_points   0x006a8e    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+         LCD_verticalline   0x0056ae    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+                 OpenI2C1   0x00a07a    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\pmc_common\i2c\i2c1open.c
+             Send_Command   0x0050bc    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+                Send_Data   0x005106    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+          SetVoltageFocus   0x00944e    program     extern E:\SLS_Intercom\uPowerLite\main.c
+               TSIGN1616A   0x009ed4    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxm1616s.asm
+           Timer0Shutdown   0x009306    program     extern E:\SLS_Intercom\uPowerLite\main.c
+              X_Y_Setting   0x005240    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+           ___if_lbl00009   0x000020    program     static                          
+       ___return_lbl00000   0x00a0d6    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x00a112    program     static                          
+       ___return_lbl00002   0x00a078    program     static                          
+       ___return_lbl00008   0x000020    program     static                          
+               __config_0   0x300001    program     static E:\SLS_Intercom\uPowerLite\main.c
+               __config_1   0x300002    program     static E:\SLS_Intercom\uPowerLite\main.c
+               __config_2   0x300003    program     static E:\SLS_Intercom\uPowerLite\main.c
+               __config_3   0x300005    program     static E:\SLS_Intercom\uPowerLite\main.c
+               __config_4   0x300006    program     static E:\SLS_Intercom\uPowerLite\main.c
+                   __init   0x000006    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\stdclib\__init.c
+               __tmplbl_9   0x00795c    program     static                          
+            __zero_memory   0x00a0d8    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                _do_cinit   0x009fdc    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                 _startup   0x00a0f8    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                benchmark   0x0000bc    program     extern E:\SLS_Intercom\uPowerLite\bitmap.h
+                compare_l   0x00a0ee    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                copy_loop   0x00a04e    program     static                          
+            copy_one_byte   0x00a054    program     static                          
+                    delay   0x0092c2    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                 delay_ms   0x009340    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                     done   0x00a078    program     static                          
+             done_copying   0x00a062    program     static                          
+               enable_DAC   0x009cd8    program     extern E:\SLS_Intercom\uPowerLite\dac.c
+                  endloop   0x00a0d2    program     static                          
+                font_init   0x009f2a    program     extern E:\SLS_Intercom\uPowerLite\font.c
+         get_current_font   0x009f1e    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                     home   0x00003c    program     extern E:\SLS_Intercom\uPowerLite\bitmap.h
+  interrupt_at_low_vector   0x000018    program     extern E:\SLS_Intercom\uPowerLite\main.c
+              keyDeBounce   0x0092f6    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                lcd_reset   0x0094d6    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                     loop   0x00a0b6    program     static                          
+                     loop   0x00a108    program     static                          
+                   loop_h   0x00a0e6    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   loop_l   0x00a0f0    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     main   0x009928    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                  setfont   0x009f46    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                     test   0x009ff6    program     static                          
+               zero_block   0x00a0e6    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADCON0   0x000fc2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ADCON0bits   0x000fc2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADCON1   0x000fc1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ADCON1bits   0x000fc1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADCON2   0x000fc0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ADCON2bits   0x000fc0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    ADRES   0x000fc3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADRESH   0x000fc4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADRESL   0x000fc3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ANSELA   0x000f38       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ANSELAbits   0x000f38       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ANSELB   0x000f39       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ANSELBbits   0x000f39       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ANSELC   0x000f3a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ANSELCbits   0x000f3a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 BAUD1CON   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             BAUD1CONbits   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 BAUD2CON   0x000f70       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             BAUD2CONbits   0x000f70       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  BAUDCON   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 BAUDCON1   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             BAUDCON1bits   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 BAUDCON2   0x000f70       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             BAUDCON2bits   0x000f70       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              BAUDCONbits   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  BAUDCTL   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      BSR   0x000fe0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP1CON   0x000fbd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP1CONbits   0x000fbd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCP2AS   0x000f64       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               CCP2ASbits   0x000f64       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP2CON   0x000f66       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP2CONbits   0x000f66       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCP3AS   0x000f5b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               CCP3ASbits   0x000f5b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP3CON   0x000f5d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP3CONbits   0x000f5d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP4CON   0x000f57       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP4CONbits   0x000f57       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP5CON   0x000f54       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP5CONbits   0x000f54       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR1   0x000fbe       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR1H   0x000fbf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR1L   0x000fbe       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR2   0x000f67       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR2H   0x000f68       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR2L   0x000f67       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR3   0x000f5e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR3H   0x000f5f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR3L   0x000f5e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR4   0x000f58       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR4H   0x000f59       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR4L   0x000f58       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR5   0x000f55       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR5H   0x000f56       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR5L   0x000f55       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CCPTMRS0   0x000f49       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CCPTMRS0bits   0x000f49       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CCPTMRS1   0x000f48       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CCPTMRS1bits   0x000f48       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CM12CON   0x000f77       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CM12CONbits   0x000f77       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CM1CON   0x000f79       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CM1CON0   0x000f79       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CM1CON0bits   0x000f79       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               CM1CONbits   0x000f79       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CM2CON   0x000f78       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CM2CON0   0x000f78       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CM2CON0bits   0x000f78       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CM2CON1   0x000f77       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CM2CON1bits   0x000f77       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               CM2CONbits   0x000f78       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUCON0   0x000f45       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUCON0bits   0x000f45       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUCON1   0x000f44       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUCON1bits   0x000f44       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUCONH   0x000f45       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUCONHbits   0x000f45       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUCONL   0x000f44       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUCONLbits   0x000f44       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUICON   0x000f43       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                CTMUICONH   0x000f43       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+            CTMUICONHbits   0x000f43       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUICONbits   0x000f43       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               Calibri_10   0x000f24       data     extern E:\SLS_Intercom\uPowerLite\font.c
+               Calibri_26   0x000f28       data     extern E:\SLS_Intercom\uPowerLite\font.c
+              Calibri_26V   0x000f30       data     extern E:\SLS_Intercom\uPowerLite\font.c
+              Calibri_26s   0x000f2c       data     extern E:\SLS_Intercom\uPowerLite\font.c
+                  DACCON0   0x000f41       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              DACCON0bits   0x000f41       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  DACCON1   0x000f40       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              DACCON1bits   0x000f40       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     DDRA   0x000f92       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 DDRAbits   0x000f92       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     DDRB   0x000f93       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 DDRBbits   0x000f93       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     DDRC   0x000f94       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 DDRCbits   0x000f94       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  ECCP1AS   0x000fb6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  ECCP2AS   0x000f64       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              ECCP2ASbits   0x000f64       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  ECCP3AS   0x000f5b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              ECCP3ASbits   0x000f5b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ECCPAS   0x000fb6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ECCPASbits   0x000fb6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    EEADR   0x000fa9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   EEADRH   0x000faa       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               EEADRHbits   0x000faa       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                EEADRbits   0x000fa9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   EECON1   0x000fa6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               EECON1bits   0x000fa6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   EECON2   0x000fa7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   EEDATA   0x000fa8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     FSR0   0x000fe9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR0H   0x000fea       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR0L   0x000fe9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     FSR1   0x000fe1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR1H   0x000fe2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR1L   0x000fe1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     FSR2   0x000fd9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR2H   0x000fda       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR2L   0x000fd9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   FVRCON   0x000f42       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               FVRCONbits   0x000f42       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  HLVDCON   0x000f9c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              HLVDCONbits   0x000f9c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    INDF0   0x000fef       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    INDF1   0x000fe7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    INDF2   0x000fdf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   INTCON   0x000ff2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  INTCON2   0x000ff1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              INTCON2bits   0x000ff1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  INTCON3   0x000ff0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              INTCON3bits   0x000ff0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               INTCONbits   0x000ff2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IOCB   0x000f62       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IOCBbits   0x000f62       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR1   0x000f9f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR1bits   0x000f9f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR2   0x000fa2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR2bits   0x000fa2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR3   0x000fa5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR3bits   0x000fa5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR4   0x000f7c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR4bits   0x000f7c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR5   0x000f7f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR5bits   0x000f7f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     LATA   0x000f89       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 LATAbits   0x000f89       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     LATB   0x000f8a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 LATBbits   0x000f8a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     LATC   0x000f8b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 LATCbits   0x000f8b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   LVDCON   0x000f9c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               LVDCONbits   0x000f9c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   OSCCON   0x000fd3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  OSCCON2   0x000fd2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              OSCCON2bits   0x000fd2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               OSCCONbits   0x000fd3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  OSCTUNE   0x000f9b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               OkKeyEvent   0x000f36       data     extern E:\SLS_Intercom\uPowerLite\main.c
+                       PC   0x000ff9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      PCL   0x000ff9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PCLATH   0x000ffa       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PCLATU   0x000ffb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE1   0x000f9d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE1bits   0x000f9d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE2   0x000fa0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE2bits   0x000fa0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE3   0x000fa3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE3bits   0x000fa3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE4   0x000f7a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE4bits   0x000f7a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE5   0x000f7d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE5bits   0x000f7d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR1   0x000f9e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR1bits   0x000f9e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR2   0x000fa1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR2bits   0x000fa1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR3   0x000fa4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR3bits   0x000fa4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR4   0x000f7b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR4bits   0x000f7b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR5   0x000f7e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR5bits   0x000f7e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PLUSW0   0x000feb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PLUSW1   0x000fe3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PLUSW2   0x000fdb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PMD0   0x000f3f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PMD0bits   0x000f3f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PMD1   0x000f3e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PMD1bits   0x000f3e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PMD2   0x000f3d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PMD2bits   0x000f3d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PORTA   0x000f80       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                PORTAbits   0x000f80       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PORTB   0x000f81       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                PORTBbits   0x000f81       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PORTC   0x000f82       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                PORTCbits   0x000f82       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PORTE   0x000f84       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                PORTEbits   0x000f84       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTDEC0   0x000fed       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTDEC1   0x000fe5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTDEC2   0x000fdd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTINC0   0x000fee       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTINC1   0x000fe6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTINC2   0x000fde       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      PR2   0x000fbb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      PR4   0x000f52       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      PR6   0x000f4b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PREINC0   0x000fec       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PREINC1   0x000fe4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PREINC2   0x000fdc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PROD   0x000ff3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PRODH   0x000ff4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PRODL   0x000ff3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PSTR1CON   0x000fb9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             PSTR1CONbits   0x000fb9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PSTR2CON   0x000f63       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             PSTR2CONbits   0x000f63       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PSTR3CON   0x000f5a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             PSTR3CONbits   0x000f5a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PSTRCON   0x000fb9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              PSTRCONbits   0x000fb9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PWM1CON   0x000fb7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              PWM1CONbits   0x000fb7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PWM2CON   0x000f65       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              PWM2CONbits   0x000f65       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PWM3CON   0x000f5c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              PWM3CONbits   0x000f5c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PWMCON   0x000fb7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               PWMCONbits   0x000fb7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RC1REG   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RC1REGbits   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RC1STA   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RC1STAbits   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RC2REG   0x000f74       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RC2STA   0x000f71       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RC2STAbits   0x000f71       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     RCON   0x000fd0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 RCONbits   0x000fd0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    RCREG   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RCREG1   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RCREG1bits   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RCREG2   0x000f74       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                RCREGbits   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    RCSTA   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RCSTA1   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RCSTA1bits   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RCSTA2   0x000f71       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RCSTA2bits   0x000f71       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                RCSTAbits   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     SIGN   0x000017       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
+                   SLRCON   0x000f60       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SLRCONbits   0x000f60       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SP1BRG   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SP1BRGH   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SP1BRGHbits   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SP1BRGbits   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SP2BRG   0x000f75       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SP2BRGH   0x000f76       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    SPBRG   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SPBRG1   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SPBRG1bits   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SPBRG2   0x000f75       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SPBRGH   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SPBRGH1   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SPBRGH1bits   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SPBRGH2   0x000f76       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SPBRGHbits   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                SPBRGbits   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SRCON0   0x000f47       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SRCON0bits   0x000f47       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SRCON1   0x000f46       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SRCON1bits   0x000f46       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP1ADD   0x000fc8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSP1ADDbits   0x000fc8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP1BUF   0x000fc9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSP1BUFbits   0x000fc9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP1CON1   0x000fc6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP1CON2   0x000fc5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP1CON3   0x000fcb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP1CON3bits   0x000fcb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP1MSK   0x000fca       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSP1MSKbits   0x000fca       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP1STAT   0x000fc7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP1STATbits   0x000fc7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP2ADD   0x000f6e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP2BUF   0x000f6f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP2CON1   0x000f6c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP2CON2   0x000f6b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP2CON3   0x000f69       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP2CON3bits   0x000f69       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP2MSK   0x000f6a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSP2MSKbits   0x000f6a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP2STAT   0x000f6d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP2STATbits   0x000f6d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SSPADD   0x000fc8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SSPADDbits   0x000fc8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SSPBUF   0x000fc9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SSPBUFbits   0x000fc9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSPCON1   0x000fc6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSPCON1bits   0x000fc6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSPCON2   0x000fc5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSPCON2bits   0x000fc5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSPCON3   0x000fcb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSPCON3bits   0x000fcb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SSPMSK   0x000fca       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SSPMSKbits   0x000fca       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSPSTAT   0x000fc7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSPSTATbits   0x000fc7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   STATUS   0x000fd8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               STATUSbits   0x000fd8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   STKPTR   0x000ffc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               STKPTRbits   0x000ffc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T0CON   0x000fd5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T0CONbits   0x000fd5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T1CON   0x000fcd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T1CONbits   0x000fcd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   T1GCON   0x000fcc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               T1GCONbits   0x000fcc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T2CON   0x000fba       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T2CONbits   0x000fba       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T3CON   0x000fb1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T3CONbits   0x000fb1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   T3GCON   0x000fb4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               T3GCONbits   0x000fb4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T4CON   0x000f51       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T4CONbits   0x000f51       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T5CON   0x000f4e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T5CONbits   0x000f4e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   T5GCON   0x000f4d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               T5GCONbits   0x000f4d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T6CON   0x000f4a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T6CONbits   0x000f4a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TABLAT   0x000ff5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TBLPTR   0x000ff6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  TBLPTRH   0x000ff7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  TBLPTRL   0x000ff6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  TBLPTRU   0x000ff8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              TBLPTRUbits   0x000ff8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR0H   0x000fd7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR0L   0x000fd6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR1H   0x000fcf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR1L   0x000fce       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TMR2   0x000fbc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR3H   0x000fb3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR3L   0x000fb2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TMR4   0x000f53       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR5H   0x000f50       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR5L   0x000f4f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TMR6   0x000f4c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      TOS   0x000ffd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TOSH   0x000ffe       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TOSL   0x000ffd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TOSU   0x000fff       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TRISA   0x000f92       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TRISAbits   0x000f92       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TRISB   0x000f93       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TRISBbits   0x000f93       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TRISC   0x000f94       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TRISCbits   0x000f94       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TRISE   0x000f96       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TRISEbits   0x000f96       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TX1REG   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TX1REGbits   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TX1STA   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TX1STAbits   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TX2REG   0x000f73       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TX2STA   0x000f72       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TX2STAbits   0x000f72       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TXREG   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TXREG1   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TXREG1bits   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TXREG2   0x000f73       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TXREGbits   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TXSTA   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TXSTA1   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TXSTA1bits   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TXSTA2   0x000f72       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TXSTA2bits   0x000f72       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TXSTAbits   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 VREFCON0   0x000f42       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             VREFCON0bits   0x000f42       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 VREFCON1   0x000f41       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             VREFCON1bits   0x000f41       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 VREFCON2   0x000f40       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             VREFCON2bits   0x000f40       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 VtgIndex   0x000f34       data     extern E:\SLS_Intercom\uPowerLite\main.c
+                        W   0x000fe8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   WDTCON   0x000fd1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               WDTCONbits   0x000fd1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     WPUB   0x000f61       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 WPUBbits   0x000f61       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     WREG   0x000fe8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 __AARGB0   0x000020       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB1   0x00001f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB2   0x00001e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB3   0x00001d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB4   0x00001c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB5   0x00001b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB6   0x00001a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB7   0x000019       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                   __AEXP   0x000021       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __BARGB0   0x000025       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                 __BARGB1   0x000024       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                 __BARGB2   0x000023       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                 __BARGB3   0x000022       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                   __BEXP   0x000026       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                __FPFLAGS   0x000018       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000018       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
+                  __REMB0   0x00001c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                  __REMB1   0x00001b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                  __REMB2   0x00001a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                  __REMB3   0x000019       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                   __TEMP   0x00002a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                 __TEMPB0   0x00002a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000029       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000028       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                 __TEMPB3   0x000027       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                  __tmp_0   0x000000       data     static E:\SLS_Intercom\uPowerLite\main.c
+                  __tmp_0   0x000000       data     static E:\SLS_Intercom\uPowerLite\lcd.c
+                  __tmp_0   0x000000       data     static E:\SLS_Intercom\uPowerLite\dac.c
+                    _font   0x000060       data     extern E:\SLS_Intercom\uPowerLite\font.c
+           _fontFirstChar   0x000068       data     extern E:\SLS_Intercom\uPowerLite\font.c
+              _fontHeight   0x00006c       data     extern E:\SLS_Intercom\uPowerLite\font.c
+            _fontLastChar   0x00006a       data     extern E:\SLS_Intercom\uPowerLite\font.c
+                curr_byte   0x000071       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+               curr_entry   0x000073       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                 data_ptr   0x000075       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+          font_Calibri_10   0x000064       data     extern E:\SLS_Intercom\uPowerLite\font.c
+          font_Calibri_26   0x000062       data     extern E:\SLS_Intercom\uPowerLite\font.c
+         font_Calibri_26V   0x000066       data     extern E:\SLS_Intercom\uPowerLite\font.c
+                     prom   0x00006e       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+             timeoutCount   0x000f35       data     extern E:\SLS_Intercom\uPowerLite\main.c
+                  voltage   0x000f00       data     extern E:\SLS_Intercom\uPowerLite\main.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                   __init   0x000006    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\stdclib\__init.c
+  interrupt_at_low_vector   0x000018    program     extern E:\SLS_Intercom\uPowerLite\main.c
+           ___if_lbl00009   0x000020    program     static                          
+       ___return_lbl00008   0x000020    program     static                          
+                     home   0x00003c    program     extern E:\SLS_Intercom\uPowerLite\bitmap.h
+                benchmark   0x0000bc    program     extern E:\SLS_Intercom\uPowerLite\bitmap.h
+             Send_Command   0x0050bc    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+                Send_Data   0x005106    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+                 LCD_init   0x00514c    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+              X_Y_Setting   0x005240    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+          LCD_paint_block   0x00528a    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+             LCD_putpixel   0x005488    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+       LCD_horizontalline   0x005558    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+         LCD_verticalline   0x0056ae    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+             LCD_FillRect   0x00572a    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+            LCD_Rectangle   0x0058f4    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+                LCD_image   0x005a92    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+               LCD_bitmap   0x005cf0    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+     LCD_draw_sloped_line   0x005e26    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+            LCD_draw_line   0x00622e    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+LCD_draw_round_corner_box   0x0062ea    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+  LCD_round_corner_points   0x006a8e    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+               __tmplbl_9   0x00795c    program     static                          
+              LCD_OutChar   0x007964    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+              LCD_OutText   0x007baa    program     extern E:\SLS_Intercom\uPowerLite\lcd.c
+                   L30929   0x007cd4    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                   L13605   0x0083b0    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                     L981   0x008d76    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                   L18982   0x008f12    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                    delay   0x0092c2    program     extern E:\SLS_Intercom\uPowerLite\main.c
+              keyDeBounce   0x0092f6    program     extern E:\SLS_Intercom\uPowerLite\main.c
+           Timer0Shutdown   0x009306    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                 delay_ms   0x009340    program     extern E:\SLS_Intercom\uPowerLite\main.c
+              FillFullLcd   0x0093b2    program     extern E:\SLS_Intercom\uPowerLite\main.c
+               FillViolet   0x0093f2    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                FillBlack   0x009420    program     extern E:\SLS_Intercom\uPowerLite\main.c
+          SetVoltageFocus   0x00944e    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                lcd_reset   0x0094d6    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                Config_IO   0x0094ec    program     extern E:\SLS_Intercom\uPowerLite\main.c
+           DisplayVoltage   0x009516    program     extern E:\SLS_Intercom\uPowerLite\main.c
+             DisplayUpMsg   0x00964a    program     extern E:\SLS_Intercom\uPowerLite\main.c
+             DisplayOkMsg   0x00973c    program     extern E:\SLS_Intercom\uPowerLite\main.c
+               DisplayVtg   0x00981e    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                     main   0x009928    program     extern E:\SLS_Intercom\uPowerLite\main.c
+                  I2CBusy   0x009c82    program     extern E:\SLS_Intercom\uPowerLite\dac.c
+               enable_DAC   0x009cd8    program     extern E:\SLS_Intercom\uPowerLite\dac.c
+                 FXD1616S   0x009e3c    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x009e4e    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                   D1616S   0x009e5e    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x009e68    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x009e6c    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x009e7e    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616s.asm
+                 FXM1616S   0x009e88    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxm1616s.asm
+               TSIGN1616A   0x009ed4    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxm1616s.asm
+                 FXM1616U   0x009ee2    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxm1616u.asm
+         get_current_font   0x009f1e    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                font_init   0x009f2a    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                  setfont   0x009f46    program     extern E:\SLS_Intercom\uPowerLite\font.c
+                _do_cinit   0x009fdc    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                     test   0x009ff6    program     static                          
+                copy_loop   0x00a04e    program     static                          
+            copy_one_byte   0x00a054    program     static                          
+             done_copying   0x00a062    program     static                          
+       ___return_lbl00002   0x00a078    program     static                          
+                     done   0x00a078    program     static                          
+                 OpenI2C1   0x00a07a    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\pmc_common\i2c\i2c1open.c
+                 FXD1616U   0x00a0ac    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\fxd1616u.c
+                     loop   0x00a0b6    program     static                          
+                  endloop   0x00a0d2    program     static                          
+       ___return_lbl00000   0x00a0d6    program     static                          
+            __zero_memory   0x00a0d8    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   loop_h   0x00a0e6    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               zero_block   0x00a0e6    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                compare_l   0x00a0ee    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   loop_l   0x00a0f0    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 _startup   0x00a0f8    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                     loop   0x00a108    program     static                          
+       ___return_lbl00001   0x00a112    program     static                          
+               __config_0   0x300001    program     static E:\SLS_Intercom\uPowerLite\main.c
+               __config_1   0x300002    program     static E:\SLS_Intercom\uPowerLite\main.c
+               __config_2   0x300003    program     static E:\SLS_Intercom\uPowerLite\main.c
+               __config_3   0x300005    program     static E:\SLS_Intercom\uPowerLite\main.c
+               __config_4   0x300006    program     static E:\SLS_Intercom\uPowerLite\main.c
+                  __tmp_0   0x000000       data     static E:\SLS_Intercom\uPowerLite\main.c
+                  __tmp_0   0x000000       data     static E:\SLS_Intercom\uPowerLite\lcd.c
+                  __tmp_0   0x000000       data     static E:\SLS_Intercom\uPowerLite\dac.c
+                     SIGN   0x000017       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000018       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000018       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
+                 __AARGB7   0x000019       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                  __REMB3   0x000019       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB6   0x00001a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                  __REMB2   0x00001a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB5   0x00001b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                  __REMB1   0x00001b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                  __REMB0   0x00001c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB4   0x00001c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB3   0x00001d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB2   0x00001e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB1   0x00001f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __AARGB0   0x000020       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                   __AEXP   0x000021       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\aarg.asm
+                 __BARGB3   0x000022       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                 __BARGB2   0x000023       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                 __BARGB1   0x000024       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                 __BARGB0   0x000025       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                   __BEXP   0x000026       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\barg.asm
+                 __TEMPB3   0x000027       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000028       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000029       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                 __TEMPB0   0x00002a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                   __TEMP   0x00002a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\temparg.asm
+                    _font   0x000060       data     extern E:\SLS_Intercom\uPowerLite\font.c
+          font_Calibri_26   0x000062       data     extern E:\SLS_Intercom\uPowerLite\font.c
+          font_Calibri_10   0x000064       data     extern E:\SLS_Intercom\uPowerLite\font.c
+         font_Calibri_26V   0x000066       data     extern E:\SLS_Intercom\uPowerLite\font.c
+           _fontFirstChar   0x000068       data     extern E:\SLS_Intercom\uPowerLite\font.c
+            _fontLastChar   0x00006a       data     extern E:\SLS_Intercom\uPowerLite\font.c
+              _fontHeight   0x00006c       data     extern E:\SLS_Intercom\uPowerLite\font.c
+                     prom   0x00006e       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                curr_byte   0x000071       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+               curr_entry   0x000073       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                 data_ptr   0x000075       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                  voltage   0x000f00       data     extern E:\SLS_Intercom\uPowerLite\main.c
+               Calibri_10   0x000f24       data     extern E:\SLS_Intercom\uPowerLite\font.c
+               Calibri_26   0x000f28       data     extern E:\SLS_Intercom\uPowerLite\font.c
+              Calibri_26s   0x000f2c       data     extern E:\SLS_Intercom\uPowerLite\font.c
+              Calibri_26V   0x000f30       data     extern E:\SLS_Intercom\uPowerLite\font.c
+                 VtgIndex   0x000f34       data     extern E:\SLS_Intercom\uPowerLite\main.c
+             timeoutCount   0x000f35       data     extern E:\SLS_Intercom\uPowerLite\main.c
+               OkKeyEvent   0x000f36       data     extern E:\SLS_Intercom\uPowerLite\main.c
+                   ANSELA   0x000f38       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ANSELAbits   0x000f38       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ANSELBbits   0x000f39       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ANSELB   0x000f39       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ANSELCbits   0x000f3a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ANSELC   0x000f3a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PMD2bits   0x000f3d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PMD2   0x000f3d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PMD1   0x000f3e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PMD1bits   0x000f3e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PMD0bits   0x000f3f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PMD0   0x000f3f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  DACCON1   0x000f40       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              DACCON1bits   0x000f40       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 VREFCON2   0x000f40       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             VREFCON2bits   0x000f40       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  DACCON0   0x000f41       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              DACCON0bits   0x000f41       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             VREFCON1bits   0x000f41       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 VREFCON1   0x000f41       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               FVRCONbits   0x000f42       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   FVRCON   0x000f42       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             VREFCON0bits   0x000f42       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 VREFCON0   0x000f42       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUICONbits   0x000f43       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+            CTMUICONHbits   0x000f43       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                CTMUICONH   0x000f43       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUICON   0x000f43       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUCONLbits   0x000f44       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUCONL   0x000f44       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUCON1bits   0x000f44       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUCON1   0x000f44       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUCONHbits   0x000f45       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUCONH   0x000f45       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CTMUCON0bits   0x000f45       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CTMUCON0   0x000f45       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SRCON1   0x000f46       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SRCON1bits   0x000f46       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SRCON0bits   0x000f47       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SRCON0   0x000f47       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CCPTMRS1bits   0x000f48       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CCPTMRS1   0x000f48       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             CCPTMRS0bits   0x000f49       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 CCPTMRS0   0x000f49       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T6CON   0x000f4a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T6CONbits   0x000f4a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      PR6   0x000f4b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TMR6   0x000f4c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   T5GCON   0x000f4d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               T5GCONbits   0x000f4d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T5CONbits   0x000f4e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T5CON   0x000f4e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR5L   0x000f4f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR5H   0x000f50       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T4CONbits   0x000f51       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T4CON   0x000f51       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      PR4   0x000f52       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TMR4   0x000f53       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP5CONbits   0x000f54       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP5CON   0x000f54       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR5   0x000f55       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR5L   0x000f55       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR5H   0x000f56       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP4CONbits   0x000f57       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP4CON   0x000f57       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR4   0x000f58       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR4L   0x000f58       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR4H   0x000f59       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             PSTR3CONbits   0x000f5a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PSTR3CON   0x000f5a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              ECCP3ASbits   0x000f5b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  ECCP3AS   0x000f5b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               CCP3ASbits   0x000f5b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCP3AS   0x000f5b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PWM3CON   0x000f5c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              PWM3CONbits   0x000f5c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP3CONbits   0x000f5d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP3CON   0x000f5d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR3L   0x000f5e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR3   0x000f5e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR3H   0x000f5f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SLRCON   0x000f60       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SLRCONbits   0x000f60       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     WPUB   0x000f61       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 WPUBbits   0x000f61       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IOCBbits   0x000f62       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IOCB   0x000f62       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PSTR2CON   0x000f63       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             PSTR2CONbits   0x000f63       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCP2AS   0x000f64       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               CCP2ASbits   0x000f64       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  ECCP2AS   0x000f64       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              ECCP2ASbits   0x000f64       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PWM2CON   0x000f65       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              PWM2CONbits   0x000f65       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP2CON   0x000f66       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP2CONbits   0x000f66       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR2   0x000f67       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR2L   0x000f67       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR2H   0x000f68       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP2CON3bits   0x000f69       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP2CON3   0x000f69       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSP2MSKbits   0x000f6a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP2MSK   0x000f6a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP2CON2   0x000f6b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP2CON1   0x000f6c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP2STAT   0x000f6d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP2STATbits   0x000f6d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP2ADD   0x000f6e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP2BUF   0x000f6f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 BAUD2CON   0x000f70       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             BAUD2CONbits   0x000f70       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 BAUDCON2   0x000f70       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             BAUDCON2bits   0x000f70       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RC2STA   0x000f71       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RC2STAbits   0x000f71       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RCSTA2   0x000f71       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RCSTA2bits   0x000f71       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TX2STA   0x000f72       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TXSTA2bits   0x000f72       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TXSTA2   0x000f72       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TX2STAbits   0x000f72       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TX2REG   0x000f73       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TXREG2   0x000f73       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RCREG2   0x000f74       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RC2REG   0x000f74       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SP2BRG   0x000f75       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SPBRG2   0x000f75       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SP2BRGH   0x000f76       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SPBRGH2   0x000f76       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CM2CON1   0x000f77       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CM2CON1bits   0x000f77       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CM12CONbits   0x000f77       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CM12CON   0x000f77       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CM2CON   0x000f78       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               CM2CONbits   0x000f78       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CM2CON0bits   0x000f78       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CM2CON0   0x000f78       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               CM1CONbits   0x000f79       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CM1CON   0x000f79       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CM1CON0bits   0x000f79       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CM1CON0   0x000f79       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE4bits   0x000f7a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE4   0x000f7a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR4   0x000f7b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR4bits   0x000f7b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR4   0x000f7c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR4bits   0x000f7c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE5bits   0x000f7d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE5   0x000f7d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR5bits   0x000f7e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR5   0x000f7e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR5   0x000f7f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR5bits   0x000f7f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PORTA   0x000f80       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                PORTAbits   0x000f80       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                PORTBbits   0x000f81       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PORTB   0x000f81       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                PORTCbits   0x000f82       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PORTC   0x000f82       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                PORTEbits   0x000f84       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PORTE   0x000f84       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     LATA   0x000f89       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 LATAbits   0x000f89       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     LATB   0x000f8a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 LATBbits   0x000f8a       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 LATCbits   0x000f8b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     LATC   0x000f8b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 DDRAbits   0x000f92       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     DDRA   0x000f92       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TRISAbits   0x000f92       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TRISA   0x000f92       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     DDRB   0x000f93       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 DDRBbits   0x000f93       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TRISB   0x000f93       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TRISBbits   0x000f93       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     DDRC   0x000f94       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 DDRCbits   0x000f94       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TRISC   0x000f94       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TRISCbits   0x000f94       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TRISEbits   0x000f96       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TRISE   0x000f96       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  OSCTUNE   0x000f9b       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              HLVDCONbits   0x000f9c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  HLVDCON   0x000f9c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   LVDCON   0x000f9c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               LVDCONbits   0x000f9c       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE1   0x000f9d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE1bits   0x000f9d       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR1   0x000f9e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR1bits   0x000f9e       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR1   0x000f9f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR1bits   0x000f9f       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE2bits   0x000fa0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE2   0x000fa0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR2   0x000fa1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR2bits   0x000fa1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR2   0x000fa2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR2bits   0x000fa2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIE3   0x000fa3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIE3bits   0x000fa3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PIR3bits   0x000fa4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PIR3   0x000fa4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 IPR3bits   0x000fa5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     IPR3   0x000fa5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               EECON1bits   0x000fa6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   EECON1   0x000fa6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   EECON2   0x000fa7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   EEDATA   0x000fa8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    EEADR   0x000fa9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                EEADRbits   0x000fa9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   EEADRH   0x000faa       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               EEADRHbits   0x000faa       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RC1STA   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RC1STAbits   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    RCSTA   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RCSTA1   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                RCSTAbits   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RCSTA1bits   0x000fab       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TXSTAbits   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TXSTA1bits   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TXSTA1   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TX1STAbits   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TX1STA   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TXSTA   0x000fac       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TXREG1   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TXREG1bits   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                TXREGbits   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TX1REG   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               TX1REGbits   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TXREG   0x000fad       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RC1REG   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RC1REGbits   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                RCREGbits   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               RCREG1bits   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   RCREG1   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    RCREG   0x000fae       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SP1BRGbits   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    SPBRG   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SPBRG1   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SPBRG1bits   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                SPBRGbits   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SP1BRG   0x000faf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SPBRGH   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SPBRGH1   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SP1BRGHbits   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SPBRGH1bits   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SP1BRGH   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SPBRGHbits   0x000fb0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T3CONbits   0x000fb1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T3CON   0x000fb1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR3L   0x000fb2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR3H   0x000fb3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   T3GCON   0x000fb4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               T3GCONbits   0x000fb4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  ECCP1AS   0x000fb6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ECCPASbits   0x000fb6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ECCPAS   0x000fb6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               PWMCONbits   0x000fb7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PWMCON   0x000fb7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              PWM1CONbits   0x000fb7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PWM1CON   0x000fb7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 BAUDCON1   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  BAUDCON   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  BAUDCTL   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              BAUDCONbits   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             BAUDCON1bits   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 BAUD1CON   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             BAUD1CONbits   0x000fb8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              PSTRCONbits   0x000fb9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PSTRCON   0x000fb9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             PSTR1CONbits   0x000fb9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 PSTR1CON   0x000fb9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T2CON   0x000fba       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T2CONbits   0x000fba       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      PR2   0x000fbb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TMR2   0x000fbc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  CCP1CON   0x000fbd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              CCP1CONbits   0x000fbd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    CCPR1   0x000fbe       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR1L   0x000fbe       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   CCPR1H   0x000fbf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADCON2   0x000fc0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ADCON2bits   0x000fc0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADCON1   0x000fc1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ADCON1bits   0x000fc1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADCON0   0x000fc2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               ADCON0bits   0x000fc2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADRESL   0x000fc3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    ADRES   0x000fc3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   ADRESH   0x000fc4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSPCON2bits   0x000fc5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSPCON2   0x000fc5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP1CON2   0x000fc5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSPCON1bits   0x000fc6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSPCON1   0x000fc6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP1CON1   0x000fc6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSPSTATbits   0x000fc7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSPSTAT   0x000fc7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP1STAT   0x000fc7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP1STATbits   0x000fc7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSP1ADDbits   0x000fc8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP1ADD   0x000fc8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SSPADD   0x000fc8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SSPADDbits   0x000fc8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSP1BUFbits   0x000fc9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP1BUF   0x000fc9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SSPBUF   0x000fc9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SSPBUFbits   0x000fc9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSP1MSK   0x000fca       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSP1MSKbits   0x000fca       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   SSPMSK   0x000fca       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               SSPMSKbits   0x000fca       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  SSPCON3   0x000fcb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              SSPCON3bits   0x000fcb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+             SSP1CON3bits   0x000fcb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 SSP1CON3   0x000fcb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   T1GCON   0x000fcc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               T1GCONbits   0x000fcc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T1CON   0x000fcd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T1CONbits   0x000fcd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR1L   0x000fce       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR1H   0x000fcf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     RCON   0x000fd0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 RCONbits   0x000fd0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   WDTCON   0x000fd1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               WDTCONbits   0x000fd1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              OSCCON2bits   0x000fd2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  OSCCON2   0x000fd2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               OSCCONbits   0x000fd3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   OSCCON   0x000fd3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                T0CONbits   0x000fd5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    T0CON   0x000fd5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR0L   0x000fd6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    TMR0H   0x000fd7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               STATUSbits   0x000fd8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   STATUS   0x000fd8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR2L   0x000fd9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     FSR2   0x000fd9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR2H   0x000fda       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PLUSW2   0x000fdb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PREINC2   0x000fdc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTDEC2   0x000fdd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTINC2   0x000fde       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    INDF2   0x000fdf       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      BSR   0x000fe0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     FSR1   0x000fe1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR1L   0x000fe1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR1H   0x000fe2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PLUSW1   0x000fe3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PREINC1   0x000fe4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTDEC1   0x000fe5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTINC1   0x000fe6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    INDF1   0x000fe7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     WREG   0x000fe8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                        W   0x000fe8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR0L   0x000fe9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     FSR0   0x000fe9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    FSR0H   0x000fea       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PLUSW0   0x000feb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  PREINC0   0x000fec       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTDEC0   0x000fed       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                 POSTINC0   0x000fee       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    INDF0   0x000fef       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  INTCON3   0x000ff0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              INTCON3bits   0x000ff0       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  INTCON2   0x000ff1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              INTCON2bits   0x000ff1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   INTCON   0x000ff2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               INTCONbits   0x000ff2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     PROD   0x000ff3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PRODL   0x000ff3       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                    PRODH   0x000ff4       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TABLAT   0x000ff5       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   TBLPTR   0x000ff6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  TBLPTRL   0x000ff6       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  TBLPTRH   0x000ff7       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+              TBLPTRUbits   0x000ff8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                  TBLPTRU   0x000ff8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                       PC   0x000ff9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      PCL   0x000ff9       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PCLATH   0x000ffa       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   PCLATU   0x000ffb       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+               STKPTRbits   0x000ffc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                   STKPTR   0x000ffc       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                      TOS   0x000ffd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TOSL   0x000ffd       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TOSH   0x000ffe       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+                     TOSU   0x000fff       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F26K22.asm
+
+
